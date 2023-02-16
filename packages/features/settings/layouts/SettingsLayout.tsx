@@ -61,24 +61,6 @@ const tabs: VerticalTabItemProps[] = [
     ],
   },
   {
-    name: "billing",
-    href: "/settings/billing",
-    icon: FiCreditCard,
-    children: [{ name: "manage_billing", href: "/settings/billing" }],
-  },
-  {
-    name: "developer",
-    href: "/settings/developer",
-    icon: FiTerminal,
-    children: [
-      //
-      { name: "webhooks", href: "/settings/developer/webhooks" },
-      { name: "api_keys", href: "/settings/developer/api-keys" },
-      // TODO: Add profile level for embeds
-      // { name: "embeds", href: "/v2/settings/developer/embeds" },
-    ],
-  },
-  {
     name: "teams",
     href: "/settings/teams",
     icon: FiUsers,

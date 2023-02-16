@@ -374,31 +374,13 @@ function UserDropdown({ small }: { small?: boolean }) {
                 </>
               )}
               <DropdownMenuSeparator />
-              <DropdownMenuItem>
-                <DropdownItem
-                  StartIcon={(props) => <FiSlack strokeWidth={1.5} {...props} />}
-                  target="_blank"
-                  rel="noreferrer"
-                  href={JOIN_SLACK}>
-                  {t("join_our_slack")}
-                </DropdownItem>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <DropdownItem StartIcon={FiMap} target="_blank" href={ROADMAP}>
-                  {t("visit_roadmap")}
-                </DropdownItem>
-              </DropdownMenuItem>
+
               <DropdownMenuItem>
                 <DropdownItem
                   type="button"
                   StartIcon={(props) => <FiHelpCircle aria-hidden="true" {...props} />}
-                  onClick={() => setHelpOpen(true)}>
+                  href="https://share-docs.clickup.com/8687531/d/h/893xb-5202/2334a268767a52d">
                   {t("help")}
-                </DropdownItem>
-              </DropdownMenuItem>
-              <DropdownMenuItem className="desktop-hidden hidden lg:flex">
-                <DropdownItem StartIcon={FiDownload} target="_blank" rel="noreferrer" href={DESKTOP_APP_LINK}>
-                  {t("download_desktop_app")}
                 </DropdownItem>
               </DropdownMenuItem>
 
@@ -471,7 +453,7 @@ const navigation: NavigationItemType[] = [
     badge: <TeamInviteBadge />,
   },
   {
-    name: "apps",
+    name: "integrations",
     href: "/apps",
     icon: FiGrid,
     isCurrent: ({ router, item }) => {
@@ -517,11 +499,6 @@ const navigation: NavigationItemType[] = [
     isCurrent: ({ router }) => {
       return router.asPath.startsWith("/apps/routing-forms/");
     },
-  },
-  {
-    name: "workflows",
-    href: "/workflows",
-    icon: FiZap,
   },
   {
     name: "settings",
@@ -728,21 +705,7 @@ function SideBar() {
             <Link href="/event-types" className="px-2">
               <Logo small />
             </Link>
-            <div className="flex space-x-2 rtl:space-x-reverse">
-              <button
-                color="minimal"
-                onClick={() => window.history.back()}
-                className="desktop-only group flex text-sm font-medium text-gray-500 hover:text-gray-900">
-                <FiArrowLeft className="h-4 w-4 flex-shrink-0 text-gray-500 group-hover:text-gray-900" />
-              </button>
-              <button
-                color="minimal"
-                onClick={() => window.history.forward()}
-                className="desktop-only group flex text-sm font-medium text-gray-500 hover:text-gray-900">
-                <FiArrowRight className="h-4 w-4 flex-shrink-0 text-gray-500 group-hover:text-gray-900" />
-              </button>
-              <KBarTrigger />
-            </div>
+            <div className="flex space-x-2 rtl:space-x-reverse" />
           </header>
 
           <hr className="desktop-only absolute -left-3 -right-3 mt-4 block w-full border-gray-200" />

@@ -154,7 +154,7 @@ input[type='text']:focus { box-shadow: none; }
 
 
 button[role="switch"][data-state="checked"] {
-  @apply bg-gray-900;
+  background-color:#3b57d7;
 }
 /* TODO: avoid global specific css */
 /* button[role="switch"][data-state="checked"] span {
