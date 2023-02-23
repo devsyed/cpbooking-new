@@ -88,11 +88,11 @@ const nextConfig = {
   productionBrowserSourceMaps: true,
   /* We already do type check on GH actions */
   typescript: {
-    ignoreBuildErrors: !!process.env.CI,
+    ignoreBuildErrors: true,
   },
   /* We already do linting on GH actions */
   eslint: {
-    ignoreDuringBuilds: !!process.env.CI,
+    ignoreDuringBuilds: true,
   },
   // TODO: We need to have all components in `@calcom/ui/components` in order to use this
   // modularizeImports: {

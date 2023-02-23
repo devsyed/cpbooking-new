@@ -54,11 +54,7 @@ const tabs: VerticalTabItemProps[] = [
     name: "security",
     href: "/settings/security",
     icon: FiKey,
-    children: [
-      { name: "password", href: "/settings/security/password" },
-      { name: "2fa_auth", href: "/settings/security/two-factor-auth" },
-      { name: "impersonation", href: "/settings/security/impersonation" },
-    ],
+    children: [{ name: "password", href: "/settings/security/password" }],
   },
   {
     name: "teams",
@@ -79,13 +75,6 @@ const tabs: VerticalTabItemProps[] = [
     ],
   },
 ];
-
-tabs.find((tab) => {
-  // Add "SAML SSO" to the tab
-  if (tab.name === "security" && !HOSTED_CAL_FEATURES) {
-    tab.children?.push({ name: "saml_config", href: "/settings/security/sso" });
-  }
-});
 
 // The following keys are assigned to admin only
 const adminRequiredKeys = ["admin"];

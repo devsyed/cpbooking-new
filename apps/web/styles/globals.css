@@ -15,7 +15,7 @@ body  {
   --brand-color-dark-mode: #fafafa;
   --brand-text-color-dark-mode: #292929;
 }
-
+.cp-logo {width: 300px;height: 35px;margin: 0 auto;margin-bottom: 50px;}
 /*
   Desktop App specific CSS
     https://docs.todesktop.com/
