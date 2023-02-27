@@ -49,7 +49,7 @@ const EmailBodyLogo = () => {
                       <a href={WEBAPP_URL} target="_blank" rel="noreferrer">
                         <img
                           height="19"
-                          src={image}
+                          src="https://i.ibb.co/Z606jRF/CP-Logo-App-Embed.png"
                           style={{
                             border: "0",
                             display: "block",
