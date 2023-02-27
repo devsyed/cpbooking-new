@@ -55,8 +55,8 @@ const EmailBodyLogo = () => {
                             display: "block",
                             outline: "none",
                             textDecoration: "none",
-                            height: "19px",
-                            width: "100%",
+                            height: "23px",
+                            width: "187px",
                             fontSize: "13px",
                           }}
                           width="89"
